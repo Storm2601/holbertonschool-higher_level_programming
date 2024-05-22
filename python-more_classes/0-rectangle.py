@@ -3,4 +3,4 @@
 
 
 class Rectangle:
-    """class rectangle with private widht and private lenght"""
+    """class rectangle with private width and private lenght"""
