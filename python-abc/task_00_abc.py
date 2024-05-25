@@ -19,6 +19,6 @@ class Dog(Animal):
 
 
 class Cat(Animal):
-	"""class representing a cat, which is a subclass of Animal"""
-	def sound(self):
-		return "Meow"
+    """class representing a cat, which is a subclass of Animal"""
+    def sound(self):
+        return "Meow"
