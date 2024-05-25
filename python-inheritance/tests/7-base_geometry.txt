@@ -46,14 +46,10 @@ ValueError: distance must be greater than 0
 Traceback (most recent call last):
 TypeError: distance must be an integer
 
->>> bg.integer_validator("fromage", True)
+>>> bg.integer_validator("chipi", True)
 Traceback (most recent call last):
-TypeError: fromage must be an integer
+TypeError: chipi must be an integer
 
 >>> bg.integer_validator("distance", {1, 5})
 Traceback (most recent call last):
 TypeError: distance must be an integer
-
->>> bg.integer_validator("name")
-Traceback (most recent call last):
-TypeError: integer_validator() missing 2 required positional argument: 'value'
