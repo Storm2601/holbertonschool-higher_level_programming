@@ -5,13 +5,13 @@ and raise error if value is not good"""
 
 class BaseGeometry:
     """class with a method to raise area"""
-
     def area(self):
-        """raises an Exception with the message"""
+        """raises an Exception with the message
+        area() is not implemented"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """method that raise errors and return the value as name"""
+        """return the value of a name"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
