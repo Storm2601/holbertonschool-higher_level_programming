@@ -1,0 +1,46 @@
+doctest for 4-print_square.py
+============================
+function that prints a square with the character #.
+
+>>> print_square = __import__('4-print_square').print_square
+
+Test success
+================
+
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+=============
+Test fails
+=============
+
+>>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(-2)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+>>> print_square(2,2)
+Traceback (most recent call last):
+TypeError: print_square() takes 1 positional argument but 2 were given
+
+>>> print_square("fail")
+Traceback (most recent call last):
+TypeError: size must be an integer
